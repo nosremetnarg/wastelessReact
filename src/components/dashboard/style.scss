@@ -1,0 +1,25 @@
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  & > div {
+    width: 40%;
+  }
+  .dashboard-item {
+    display: flex;
+    margin-bottom: 5rem;
+    .item-left {
+      margin-right: 2rem;
+      width: 6rem;
+      img {
+        width: 100%;
+      }
+    }
+    .item-right {
+      flex: 1;
+      .title {
+        font-size: 2rem;
+      }
+    }
+  }
+}

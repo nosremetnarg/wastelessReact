@@ -1,0 +1,14 @@
+.wasteless-slider-wrapper {
+  .wasteless-slider-title {
+    color: $grey;
+    font-size: 1.5rem;
+  }
+  .wasteless-slider-content {
+    display: flex;
+    align-items: center;
+    .wasteless-slider-value {
+      margin-left: 1rem;
+      font-size: 2rem;
+    }
+  }
+}

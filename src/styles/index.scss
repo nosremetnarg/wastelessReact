@@ -1,3 +1,7 @@
+// import ant design style
+@import '~antd/dist/antd.css';
+@import '~antd/dist/antd.min.css';
+
 // import common styles
 @import './common/colors.scss';
 @import './common/variables.scss';
@@ -5,6 +9,9 @@
 
 // import base styles
 @import './base/base.scss';
+
+// components styles
+@import '../components/atoms/slider/style.scss';
 
 // import main pages
 @import '../components/dashboard/style.scss';
