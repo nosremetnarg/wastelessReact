@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 import { Button, InputNumber } from 'antd';
+import {
+  ResponsiveContainer,
+  LineChart,
+  Line,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  XAxis,
+  YAxis
+} from 'recharts';
 
 import Slider from '../atoms/slider';
 import {
@@ -11,6 +21,8 @@ import {
   meat,
   milk,
 } from '../../assets/images';
+
+import { chartData } from '../../utils/variable';
 
 const Dashboard = () => {
   const [price, setPrice] = useState(0);
@@ -156,6 +168,20 @@ const Dashboard = () => {
         >
           SIMULATE
         </Button>
+      </div>
+      <div className='chart-container'>
+        <ResponsiveContainer width='100%' height={600}>
+          <LineChart data={chartData}
+            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <Legend verticalAlign="top" height={36}/>
+            <Line name="pv of pages" dataKey="pv" stroke="#8884d8" />
+            <Line name="uv of pages" dataKey="uv" stroke="#82ca9d" />
+          </LineChart>
+        </ResponsiveContainer>
       </div>
     </div>
   )
