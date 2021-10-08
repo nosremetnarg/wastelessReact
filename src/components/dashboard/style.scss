@@ -1,25 +1,41 @@
 .dashboard-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10rem;
-  & > div {
-    width: 40%;
+  margin: 0 10rem;
+  .input-container {
+    margin-top: 10rem;
+    .input-title {
+      margin-bottom: 2rem;
+    }
+    .input-description {
+      margin-top: 2rem;
+    }
   }
-  .dashboard-item {
+  .slides-group {
     display: flex;
-    margin-bottom: 5rem;
-    .item-left {
-      margin-right: 2rem;
-      width: 6rem;
-      img {
-        width: 100%;
+    justify-content: space-between;
+    margin-top: 10rem;
+    & > div {
+      width: 40%;
+    }
+    .dashboard-item {
+      display: flex;
+      margin-bottom: 5rem;
+      .item-left {
+        margin-right: 2rem;
+        width: 6rem;
+        img {
+          width: 100%;
+        }
+      }
+      .item-right {
+        flex: 1;
+        .title {
+          font-size: 2rem;
+        }
       }
     }
-    .item-right {
-      flex: 1;
-      .title {
-        font-size: 2rem;
-      }
-    }
+  }
+  .simulate-button {
+    display: flex;
+    justify-content: center;
   }
 }
