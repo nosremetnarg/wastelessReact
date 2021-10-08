@@ -1,0 +1,10 @@
+// import common styles
+@import './common/colors.scss';
+@import './common/variables.scss';
+@import './common/fonts.scss';
+
+// import base styles
+@import './base/base.scss';
+
+// import main pages
+@import '../components/dashboard/style.scss';

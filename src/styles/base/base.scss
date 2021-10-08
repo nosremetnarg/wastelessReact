@@ -1,0 +1,37 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  &:focus, &:active {
+    outline: none;
+  }
+  &:not([disabled]):hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+}
+
+input {
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+textarea {
+  &:focus, &:active {
+    outline: none;
+  }
+}
